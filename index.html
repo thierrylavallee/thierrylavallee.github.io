@@ -9,11 +9,27 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <main class="main h-100" id="top">
-        <section class="py-0 overflow-hidden bg-secondary">
-            <h1 class="text-primary">Hello World</h1>
+    <main class="main min-vh-100" id="top">
+        <section class="py-0 overflow-hidden bg-secondary min-vh-100">
+            <div class="container-fluid">
+                <h1 class="text-primary">Hello World</h1>
+            </div>
         </section>
     </main>
+    <footer class="bd-footer bg-light footer mt-auto py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 text-dark">
+                    <a href="#"><i class="fa fa-facebook-square color-facebook text-primary"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square color-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square color-linkedin"></i></a>
+                </div>
+                <div class="col-6 text-dark">
+                    ©<span class="thirdCopyYear"></span> <a href="https://thierrylavallee.github.io/">https://thierrylavallee.github.io/</a> | All Right Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
