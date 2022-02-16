@@ -8,14 +8,12 @@
 @import "./../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "./../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
 
-
-
-.thirdLogoText{
+.thirdLogoText {
   padding-left: 10px;
   display: block;
   margin: 0;
 
-  .thirdLogoTextBrand{
+  .thirdLogoTextBrand {
     font-weight: 900;
     display: block;
     margin: 0;
@@ -23,7 +21,7 @@
     line-height: 2rem;
   }
 
-  .thirdLogoTextBase{
+  .thirdLogoTextBase {
     font-weight: 200;
     font-size: 0.6rem;
     line-height: 0.6rem;
@@ -31,8 +29,17 @@
     margin: 0;
     padding-left: 0.1rem;
 
-    .thirdLogoTextBaseHL{
+    .thirdLogoTextBaseHL {
       font-weight: 400;
     }
+  }
+}
+.thirdFooterCell {
+  display: inline-block;
+  margin: 0 $grid-gutter-width;
+
+  a {
+    text-decoration: none;
+    color: $light;
   }
 }

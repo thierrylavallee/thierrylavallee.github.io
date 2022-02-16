@@ -22697,4 +22697,14 @@ readers do not read off random characters that represent icons */
 .thirdLogoText .thirdLogoTextBase .thirdLogoTextBaseHL {
   font-weight: 400;
 }
+
+.thirdFooterCell {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.thirdFooterCell a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
 /*# sourceMappingURL=main.css.map */
