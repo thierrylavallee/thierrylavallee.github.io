@@ -34,12 +34,35 @@
     }
   }
 }
-.thirdFooterCell {
-  display: inline-block;
-  margin: 0 $grid-gutter-width;
 
-  a {
-    text-decoration: none;
-    color: $light;
+.thirdFooterCol {
+  .thirdFooterLine {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    height: 0.5px;
+    border-radius: 0.25px;
+    background-color: $light;
+    display: block;
+    width: 100%;
+    opacity: 0.625;
+    top: 11px;
+  }
+
+  .thirdFooterCell {
+    background-color: $dark;
+    overflow: hidden;
+    z-index: 100;
+    display: inline-block;
+    margin: 0 $grid-gutter-width;
+    code {
+      color: $light;
+    }
+
+    a {
+      text-decoration: none;
+      color: $light;
+    }
   }
 }
