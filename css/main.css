@@ -274,7 +274,7 @@
   --bs-font-sans-serif: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Source Code Pro, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -6118,7 +6118,7 @@ fieldset:disabled .btn {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6231,7 +6231,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -22671,61 +22671,189 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.thirdLogoText {
-  padding-left: 10px;
-  display: block;
+html,
+body {
+  height: 100%;
+  padding: 0;
   margin: 0;
 }
 
-.thirdLogoText .thirdLogoTextBrand {
+.thirdLogo {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  max-height: 100px;
+}
+
+.thirdLogo .thirdPicto {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.thirdLogo .thirdLogoText {
+  padding-left: 10px;
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+.thirdLogo .thirdLogoText .thirdLogoTextBrand {
   font-weight: 900;
   display: block;
   margin: 0;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 6.5rem;
+  line-height: 4.5rem;
 }
 
-.thirdLogoText .thirdLogoTextBase {
+.thirdLogo .thirdLogoText .thirdLogoTextBase {
+  padding-top: 0.2rem;
   font-weight: 200;
-  font-size: 0.6rem;
-  line-height: 0.6rem;
+  font-size: 1.65rem;
+  line-height: 1.65rem;
   display: block;
   margin: 0;
-  padding-left: 0.1rem;
+  padding-left: 0.4rem;
 }
 
-.thirdLogoText .thirdLogoTextBase .thirdLogoTextBaseHL {
+.thirdLogo .thirdLogoText .thirdLogoTextBase .thirdLogoTextBaseHL {
   font-weight: 400;
 }
 
-.thirdFooterCol .thirdFooterLine {
+@media (max-width: 767.98px) {
+  .thirdLogo {
+    position: absolute;
+    top: 50%;
+    margin-top: -32.5px;
+    max-height: 65px;
+  }
+  .thirdLogo .thirdPicto {
+    height: 65px;
+    width: 65px;
+    float: left;
+  }
+  .thirdLogo .thirdLogoText {
+    padding-left: 10px;
+    display: block;
+    float: left;
+    margin: 0;
+  }
+  .thirdLogo .thirdLogoText .thirdLogoTextBrand {
+    font-weight: 900;
+    display: block;
+    margin: 0;
+    font-size: 4.225rem;
+    line-height: 2.925rem;
+  }
+  .thirdLogo .thirdLogoText .thirdLogoTextBase {
+    padding-top: 0.13rem;
+    font-weight: 200;
+    font-size: 1.0725rem;
+    line-height: 1.0725rem;
+    display: block;
+    margin: 0;
+    padding-left: 0.26rem;
+  }
+  .thirdLogo .thirdLogoText .thirdLogoTextBase .thirdLogoTextBaseHL {
+    font-weight: 400;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+footer .thirdFooterCol {
+  overflow: hidden;
+  z-index: 200;
+}
+
+footer .thirdFooterCol .thirdFooterCell {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  padding: 0;
+  margin: 0.5625rem 1.5rem;
+  color: #f8f9fa;
   position: relative;
+  z-index: 300;
+}
+
+footer .thirdFooterCol .thirdFooterCell div.thirdFooterText {
+  display: block flow;
+  z-index: 500;
+  opacity: 1;
+  background-color: #212529;
+}
+
+footer .thirdFooterCol .thirdFooterCell .thirdFooterLine {
+  position: absolute;
+  z-index: 400;
   margin: 0;
   padding: 0;
-  z-index: 1;
-  height: 0.5px;
-  border-radius: 0.25px;
-  background-color: #f8f9fa;
-  display: block;
-  width: 100%;
-  opacity: 0.625;
-  top: 11px;
+  height: 0.05rem;
+  border-radius: 0.025rem;
+  background-color: #906f15;
+  width: 150%;
+  opacity: 1;
+  top: 1.26071rem;
+  left: -15%;
 }
 
-.thirdFooterCol .thirdFooterCell {
-  background-color: #212529;
-  overflow: hidden;
-  z-index: 100;
-  display: inline-block;
-  margin: 0 1.5rem;
-}
-
-.thirdFooterCol .thirdFooterCell code {
-  color: #f8f9fa;
-}
-
-.thirdFooterCol .thirdFooterCell a {
+footer .thirdFooterCol .thirdFooterCell a {
   text-decoration: none;
   color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  footer .thirdFooterCol {
+    overflow: hidden;
+    z-index: 200;
+  }
+  footer .thirdFooterCol .thirdFooterCell {
+    height: 1.275rem;
+    line-height: 1.275rem;
+    padding: 0;
+    font-size: 0.74375rem;
+    margin: 0.31875rem 1.5rem;
+    color: #f8f9fa;
+    position: relative;
+    z-index: 300;
+  }
+  footer .thirdFooterCol .thirdFooterCell div.thirdFooterText {
+    display: block flow;
+    z-index: 500;
+    opacity: 1;
+    background-color: #212529;
+  }
+  footer .thirdFooterCol .thirdFooterCell .thirdFooterLine {
+    position: absolute;
+    z-index: 400;
+    margin: 0;
+    padding: 0;
+    height: 0.05rem;
+    border-radius: 0.025rem;
+    background-color: #906f15;
+    width: 150%;
+    opacity: 1;
+    top: 0.70357rem;
+    left: -15%;
+  }
+  footer .thirdFooterCol .thirdFooterCell a {
+    text-decoration: none;
+    color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
