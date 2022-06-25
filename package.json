@@ -1,0 +1,22 @@
+{
+  "name": "thierrylavallee.github.io",
+  "version": "0.1.0",
+  "description": "Personal Page Thlv",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thierrylavallee/thierrylavallee.github.io.git"
+  },
+  "author": "thierry.lavallee68@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thierrylavallee/thierrylavallee.github.io/issues"
+  },
+  "homepage": "https://github.com/thierrylavallee/thierrylavallee.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
