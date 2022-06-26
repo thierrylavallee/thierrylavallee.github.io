@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/thierrylavallee/thierrylavallee.github.io#readme",
   "dependencies": {
+    "bootstrap": "^3.4.1",
     "jquery": "^3.6.0"
   }
 }
