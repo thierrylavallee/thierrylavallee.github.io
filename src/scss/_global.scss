@@ -1,0 +1,77 @@
+//
+// Global
+//
+
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+//
+// https://caniuse.com/?search=scroll-padding
+
+html {
+    height: 100%;
+    scroll-padding-top: calc(#{$navbar-height} - 1px);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+        sans-serif !important;
+}
+
+//- Page section styling
+.page-section {
+    padding: 8rem 0;
+}
+
+// Custom utilities for this theme
+.text-white-75 {
+    color: fade-out($white, 0.25) !important;
+}
+
+.thirdSubBrand {
+    color: hsl(0,100%,100%);
+}
+
+.navbar-brand {
+    background-image: url('../assets/img/svg/Third_Picto_Carolina_White.svg');
+    background-repeat: no-repeat;
+    background-position: -5px center;
+    background-size: contain;
+    padding-left: 35px;
+
+    .thirdBrand {
+        font-weight: 700;
+        color: $primary;
+    }
+
+    .thirdSubBrand {
+        font-size: 66.6666666666%;
+        font-weight: 300;
+    }
+    .thirdSubBrand::before {
+        content: ' ';
+    }
+}
+.languageSwitcher {
+    min-width: 50px !important;
+    a[data-langKey='fr']::before {
+        content: url('../assets/img/svg/frFlag.svg');
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        position: relative;
+        margin-left: 6px;
+        right: 6px;
+    }
+    a[data-langKey='en']::before {
+        content: url('../assets/img/svg/ukFlag.svg');
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        position: relative;
+        margin-left: 6px;
+        right: 6px;
+    }
+}
