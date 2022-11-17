@@ -6,3 +6,5 @@ build/PictoThird2022_Carolina.ai
 build/PictoThird2022.ai
 build/Third_Picto_Carolina_Gray-100.jpg
 build/third2023.iconsproj
+node_modules
+node_modules/*

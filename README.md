@@ -1,2 +1,3 @@
 # thierrylavallee.github.io
-Personal page
+Thierry Lavallée Personal page
+Short description of my profile
