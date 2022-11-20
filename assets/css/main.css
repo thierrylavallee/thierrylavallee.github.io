@@ -1,5 +1,88 @@
 @charset "UTF-8";
-@import './../node_modules/source-sans/source-sans-3.css';
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-ExtraLight.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-ExtraLight.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-ExtraLightIt.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-ExtraLightIt.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-Light.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-Light.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-LightIt.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-LightIt.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-Regular.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-Regular.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-It.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-It.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-Semibold.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-Semibold.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-SemiboldIt.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-SemiboldIt.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-Bold.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-Bold.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-BoldIt.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-BoldIt.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-Black.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-Black.otf.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("../fonts/WOFF2/TTF/SourceSans3-BlackIt.ttf.woff2") format("woff2"), url("../fonts/WOFF/OTF/SourceSans3-BlackIt.otf.woff") format("woff");
+}
 .thirdBack {
   background: radial-gradient(ellipse closest-corner at center, rgba(128, 90, 0, 0.625) 0%, #1a1200 100%), url("./../img/hero_background.jpg");
   background-size: cover;
@@ -44,6 +127,7 @@
 .navbar-brand .thirdSubBrand {
   font-size: 66.6666666666%;
   font-weight: 300;
+  color: hsl(42.5deg, 10%, 80%);
 }
 
 .thirdLead {
@@ -161,7 +245,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
 }
 

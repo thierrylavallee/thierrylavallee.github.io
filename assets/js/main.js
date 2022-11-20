@@ -1,5 +1,22 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     // THLV customs
+    var nav = navigator;
+    switch (nav.languages[1]) {
+        case 'en-US':
+            localStorage.setItem('language', 'en');
+            break;
+        case 'en-GB':
+            localStorage.setItem('language', 'en');
+            break;
+        case 'en':
+            localStorage.setItem('language', 'en');
+            break;
+        case 'fr':
+            localStorage.setItem('language', 'fr');
+            break;
+        default:
+            localStorage.setItem('language', 'fr');
+    }
     var d = new Date();
     $('.thirdCopyYear').text(d.getFullYear());
     var language;
