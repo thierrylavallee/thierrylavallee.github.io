@@ -1,0 +1,54 @@
+.thirdBack {
+    background: radial-gradient(
+            ellipse closest-corner at center,
+            #{fade-out($thirdDark25, 0.375)} 0%,
+            #{fade-out($thirdDark0, 0)} 100%
+        ),
+        url('./../img/hero_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.languageSwitcher {
+    min-width: 50px !important;
+    a[data-langKey='fr']::before {
+        content: url('../img/svg/frFlag.svg');
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        position: relative;
+        margin-left: 6px;
+        right: 6px;
+    }
+    a[data-langKey='en']::before {
+        content: url('../img/svg/ukFlag.svg');
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        position: relative;
+        margin-left: 6px;
+        right: 6px;
+    }
+}
+.navbar-brand {
+    background-image: url('../img/svg/Third_Picto_Carolina_White.svg');
+    background-repeat: no-repeat;
+    background-position: -5px center;
+    background-size: contain;
+    padding-left: 35px;
+
+    .thirdBrand {
+        font-weight: 700;
+        color: $primary;
+    }
+
+    .thirdSubBrand {
+        font-size: 66.6666666666%;
+        font-weight: 300;
+        color: $gray-100;
+    }
+}
+.thirdLead{
+    text-shadow: 0px 1px 2px $thirdDark0;
+}

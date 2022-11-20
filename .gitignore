@@ -1,4 +1,5 @@
 build
+build/*
 build/favicon.png
 build/FlagsThird.ai
 build/hero_background.psd
