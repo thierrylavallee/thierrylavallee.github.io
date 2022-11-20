@@ -62,5 +62,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
         $('.languageSwitcher .dropdown-item').on('click', function () {
             setLanguage($(this).attr('data-langKey'));
         });
+        $('#toPanel02').on('click', function () {
+            $('.thirdPanel').each(function (i, e) {
+                if ($(e).attr('id') !== 'panel02') {
+                    $(e).fadeOut('slow', function () {
+                        $(e).removeClass('thirdVisible');
+                        $(e).attr('style', '');
+                    });
+                }
+            });
+            setTimeout(function () {
+                $('#panel02').attr('style', 'display: none;');
+                $('#panel02').addClass('thirdVisible');
+                $('#panel02').fadeIn('slow', function () {});
+            }, 500);
+        });
     });
 });

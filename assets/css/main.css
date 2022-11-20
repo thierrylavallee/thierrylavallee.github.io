@@ -134,6 +134,18 @@
   text-shadow: 0px 1px 2px hsl(42.5deg, 100%, 5%);
 }
 
+.thirdPanel {
+  height: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.thirdVisible {
+  height: auto;
+  visibility: visible;
+  display: block;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
