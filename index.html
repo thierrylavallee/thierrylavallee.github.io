@@ -12,7 +12,7 @@
         <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <header class="mb-auto">
                 <nav class="navbar navbar-dark navbar-expand-lg text-light" id="mainNav">
-                    <a class="navbar-brand" href="#page-top">
+                    <a class="navbar-brand thirdMenuLink" href="#" data-thirdTarget="panel_01">
                         <span class="thirdBrand" data-langKey="brand"> Third </span>
                         <span class="thirdSubBrand" data-langKey="subBrandLine"> par Thierry Lavallée </span>
                     </a>
@@ -32,19 +32,26 @@
                         <ul class="navbar-nav ms-auto nav justify-content-end">
                             <li class="nav-item">
                                 <a
-                                    class="nav-link thirdMenuLink"
+                                    class="nav-link thirdMenuLink active"
                                     href="#"
-                                    data-langKey="about"
-                                    data-thirdTarget="panel_02"
-                                    >About</a
+                                    data-langKey="accueil"
+                                    data-thirdTarget="panel_01"
+                                    >Accueil</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link thirdMenuLink" href="#" data-langKey="resume">Resume</a>
+                                <a
+                                    class="nav-link thirdMenuLink"
+                                    href="#"
+                                    data-langKey="more"
+                                    data-thirdTarget="panel_02"
+                                    >More</a
+                                >
                             </li>
-                            <li class="nav-item">
+
+                            <!-- <li class="nav-item">
                                 <a class="nav-link thirdMenuLink" href="#" data-langKey="references">References</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle active"
@@ -125,7 +132,7 @@
                                 </ol>
                             </div>
                             <div class="col-4">
-                                <img alt="picture" src="./assets/img/Thierry2018.png" class="img-fluid" />
+                                <img alt="picture" src="./assets/img/Thierry2018.png" class="img-fluid thirdFloatImage" />
                             </div>
                         </div>
                     </div>
