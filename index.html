@@ -28,13 +28,24 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <!-- <ul class="navbar-nav nav ms-auto justify-content-center">
-                                <li class="nav-item"><a class="nav-link" href="#about" data-langKey="about">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#services" data-langKey="resume">Resume</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#portfolio" data-langKey="references">References</a></li>
-                            </ul> -->
+                        <ul class="navbar-nav nav ms-auto justify-content-end"></ul>
                         <ul class="navbar-nav ms-auto nav justify-content-end">
-                            <li class="nav-item dropstart">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link thirdMenuLink"
+                                    href="#"
+                                    data-langKey="about"
+                                    data-thirdTarget="panel_02"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link thirdMenuLink" href="#" data-langKey="resume">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link thirdMenuLink" href="#" data-langKey="references">References</a>
+                            </li>
+                            <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle active"
                                     href="#"
@@ -58,25 +69,62 @@
             </header>
 
             <main class="thirdMain">
-                <div class="row justify-content-center thirdPanel thirdVisible" id="panel01">
+                <div class="row justify-content-center thirdPanel thirdVisible" id="panel_01">
                     <div class="col-8">
                         <h1 data-langKey="head01">Dummy</h1>
                         <p class="lead thirdLead" data-langKey="body01">Dummy</p>
                         <p class="lead">
-                            <a href="#" class="btn btn-primary btn-lg fw-bold" data-langKey="more" id="toPanel02"
-                                >Learn more</a
+                            <a
+                                href="#"
+                                class="btn btn-primary btn-lg fw-bold thirdMenuLink"
+                                data-langKey="more"
+                                data-thirdTarget="panel_02"
                             >
+                                Learn more
+                            </a>
                         </p>
                     </div>
                 </div>
-                <div class="row justify-content-center thirdPanel" id="panel02">
+                <div class="row justify-content-center thirdPanel" id="panel_02">
                     <div class="col-8">
                         <div class="row">
-                            <div class="col-7 text-start justify-content-center">
+                            <div class="col-8 text-start justify-content-center">
                                 <h1 data-langKey="head02">Dummy</h1>
                                 <p class="lead thirdLead" data-langKey="body02">Dummy</p>
+                                <ol class="list-group list-group-numbered thirdList">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Compétence</div>
+                                            A first item
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Compétence</div>
+                                            A second item
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Compétence</div>
+                                            A third item
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Compétence</div>
+                                            A fourth item
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Compétence</div>
+                                            Another item
+                                        </div>
+                                    </li>
+                                </ol>
                             </div>
-                            <div class="col-5">
+                            <div class="col-4">
                                 <img alt="picture" src="./assets/img/Thierry2018.png" class="img-fluid" />
                             </div>
                         </div>

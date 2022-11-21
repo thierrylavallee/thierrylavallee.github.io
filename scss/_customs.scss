@@ -49,17 +49,25 @@
         color: $third-Gray-080;
     }
 }
-.thirdLead{
+.thirdLead {
     text-shadow: 0px 1px 2px $thirdDark0;
 }
 
-.thirdPanel{
+.thirdPanel {
     height: 0;
     visibility: hidden;
     display: none;
 }
-.thirdVisible{
+.thirdVisible {
     height: auto;
     visibility: visible;
     display: block;
+}
+.list-group.thirdList {
+    border-color: $third-Gray-050;
+    .list-group-item {
+        border-color: $third-Gray-050;
+        background-color: transparent !important;
+        color: $third-Gray-090;
+    }
 }

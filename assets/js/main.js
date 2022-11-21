@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     $('.thirdCopyYear').text(d.getFullYear());
     var language;
     var baseUrlLanguages = '/assets/language/';
+    var fadeTime = 1000;
     function getLanguage() {
         localStorage.getItem('language') == null ? setLanguage('fr') : true;
         $.ajax({
@@ -62,20 +63,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
         $('.languageSwitcher .dropdown-item').on('click', function () {
             setLanguage($(this).attr('data-langKey'));
         });
-        $('#toPanel02').on('click', function () {
+        $('.thirdMenuLink').on('click', function () {
+            var target = $(this).attr('data-thirdTarget');
             $('.thirdPanel').each(function (i, e) {
-                if ($(e).attr('id') !== 'panel02') {
-                    $(e).fadeOut('slow', function () {
+                if ($(e).attr('id') !== target) {
+                    $(e).fadeOut(fadeTime, function () {
                         $(e).removeClass('thirdVisible');
                         $(e).attr('style', '');
                     });
                 }
             });
             setTimeout(function () {
-                $('#panel02').attr('style', 'display: none;');
-                $('#panel02').addClass('thirdVisible');
-                $('#panel02').fadeIn('slow', function () {});
-            }, 500);
+                $(('#'+target)).attr('style', 'display: none;');
+                $(('#'+target)).addClass('thirdVisible');
+                $(('#'+target)).fadeIn(fadeTime, function () {});
+            }, fadeTime);
         });
     });
 });

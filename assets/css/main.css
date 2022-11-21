@@ -146,6 +146,15 @@
   display: block;
 }
 
+.list-group.thirdList {
+  border-color: hsl(42.5deg, 10%, 50%);
+}
+.list-group.thirdList .list-group-item {
+  border-color: hsl(42.5deg, 10%, 50%);
+  background-color: transparent !important;
+  color: hsl(42.5deg, 10%, 90%);
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
